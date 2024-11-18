@@ -12,7 +12,7 @@
 
 ## Descrição
 
-O projeto consiste em uma lista de rádios, podendo adicionar as rádios a uma lista de favoritos e também reproduzi-las.
+O projeto consiste em uma lista de rádios, podendo adicionar e remover as rádios a uma lista de favoritos, edita-las e também reproduzi-las.
 
 ### Técnologias Utilizadas
 
