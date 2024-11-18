@@ -1,5 +1,5 @@
 {
-  "name": "teste",
+  "name": "Radio Browser",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "test": "jest",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://de1.api.radio-browser.info",
   "eslintConfig": {
     "extends": [
       "react-app",

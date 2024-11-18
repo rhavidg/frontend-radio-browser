@@ -78,9 +78,6 @@ function App() {
     p: 4,
   };
 
-  function redirect(link) {
-    window.open(link);
-  }
   async function getRadios() {
     const result = await service.getRadios();
     setRadios(result.data);
@@ -88,8 +85,14 @@ function App() {
   }
 
   async function getRadiosByParam() {
-    const result = await service.getRadiosByParam(searchParam, search);
-    setRadios(result.data);
+    console.log(search.length);
+    if (search.length === 0) {
+      const result = await service.getRadios();
+      setRadios(result.data);
+    } else {
+      const result = await service.getRadiosByParam(searchParam, search);
+      setRadios(result.data);
+    }
   }
 
   function handleModalClose() {
