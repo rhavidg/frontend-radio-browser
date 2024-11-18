@@ -136,7 +136,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <Box>
         <Button variant="contained" id="btn-menu" onClick={toggleDrawer(true)}>
           <MenuIcon />
         </Button>
@@ -157,7 +157,7 @@ function App() {
                 gap: "15px",
               }}
             >
-              <div>
+              <Box>
                 <TextField
                   id="standard-basic"
                   variant="standard"
@@ -171,9 +171,9 @@ function App() {
                   onChange={(e) => setSearch(e.target.value)}
                   onKeyUp={() => handleKeyUp()}
                 />
-              </div>
+              </Box>
 
-              <div>
+              <Box>
                 <InputLabel id="demo-simple-select-label">Search by</InputLabel>
                 <Select
                   labelId="demo-simple-select-label"
@@ -189,9 +189,9 @@ function App() {
                   <MenuItem value={"country"}>Country</MenuItem>
                   <MenuItem value={"language"}>Language</MenuItem>
                 </Select>
-              </div>
-              <div
-                style={{
+              </Box>
+              <Box
+                sx={{
                   width: "25%",
                   display: "flex",
                   justifyContent: "flex-end",
@@ -199,7 +199,7 @@ function App() {
                 onClick={toggleDrawer(false)}
               >
                 <CloseIcon sx={{ cursor: "pointer" }} />
-              </div>
+              </Box>
             </Box>
 
             <List
@@ -301,7 +301,7 @@ function App() {
             </List>
           </Box>
         </Drawer>
-      </div>
+      </Box>
       <PageContainer>
         <Box>
           <h1>Radio Browser</h1>

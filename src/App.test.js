@@ -29,4 +29,20 @@ describe("App Component", () => {
       expect.objectContaining({ stationuuid: "uuid1" })
     );
   });
+
+  it("Remove radio from favorites", async () => {
+    const mockFavorites = [
+      { name: "Radio 1", stationuuid: "123", favicon: "", country: "USA" },
+    ];
+
+    service.getRadios.mockResolvedValueOnce({ data: mockFavorites });
+
+    render(<App />);
+
+    const deleteIcon = screen.getByTestId("delete-icon");
+    fireEvent.click(deleteIcon);
+
+    const updatedFavorites = JSON.parse(localStorage.getItem("Favorites"));
+    expect(updatedFavorites).toHaveLength(0);
+  });
 });
