@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  #drawer {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #btn-menu {
+    width: 64px;
+  }
+}
