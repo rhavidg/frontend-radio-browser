@@ -6,7 +6,7 @@
 - Para usar: npm start
 - Para os testes: npm test
 
-- Também disponível para ser visto em: https://splendid-sorbet-246a29.netlify.app/
+- Também disponível para ser visto em: https://leafy-youtiao-780737.netlify.app/
 
 > This is a challenge by [Coodesh](https://coodesh.com/)
 
