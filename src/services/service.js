@@ -1,27 +1,17 @@
 import axios from "axios";
 
-const url = "https://de1.api.radio-browser.info/json/stations/search?limit=20";
-
 export function getRadios() {
-  return axios.get(url);
+  return axios.get("api/stations/search?limit=20");
 }
 
 export function getRadiosByParam(searchParam, searchTerm) {
   switch (searchParam) {
     case "name":
-      return axios.get(
-        "http://de1.api.radio-browser.info/json/stations/byname/" + searchTerm
-      );
+      return axios.get("api/stations/byname/" + searchTerm);
     case "country":
-      return axios.get(
-        "http://de1.api.radio-browser.info/json/stations/bycountry/" +
-          searchTerm
-      );
+      return axios.get("api/stations/bycountry/" + searchTerm);
     case "language":
-      return axios.get(
-        "http://de1.api.radio-browser.info/json/stations/bylanguage/" +
-          searchTerm
-      );
+      return axios.get("api/stations/bylanguage/" + searchTerm);
   }
 }
 

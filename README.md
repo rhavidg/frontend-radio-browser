@@ -6,7 +6,7 @@
 - Para usar: npm start
 - Para os testes: npm test
 
-- Também disponível para ser visto em: https://frontend-radio-browser-five.vercel.app/
+- Também disponível para ser visto em: https://cool-florentine-ab246f.netlify.app/
 
 > This is a challenge by [Coodesh](https://coodesh.com/)
 
