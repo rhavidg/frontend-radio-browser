@@ -2,11 +2,11 @@
 
 ## Instruções
 
--Para instalar: npm install
--Para usar: npm start
--Para os testes: npm test
+- Para instalar: npm install
+- Para usar: npm start
+- Para os testes: npm test
 
--Também disponível para ser visto em: https://frontend-radio-browser-five.vercel.app/
+- Também disponível para ser visto em: https://frontend-radio-browser-five.vercel.app/
 
 > This is a challenge by [Coodesh](https://coodesh.com/)
 
