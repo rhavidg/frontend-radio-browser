@@ -148,7 +148,6 @@ function App() {
             sx={{
               borderRight: "1px solid gray",
               padding: "10px",
-              width: "25vw",
             }}
             id="drawer"
           >
